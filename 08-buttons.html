@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Buttons</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Buttons</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <title>Bootstrap Sandbox | Buttons</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-5">Buttons</h1>
 
-      <!-- Styles -->
-      <button class="">Primary</button>
-      <button class="">Secondary</button>
-      <button class="">Success</button>
-      <button class="">Danger</button>
-      <button class="">Warning</button>
-      <button class="">Info</button>
-      <button class="">Light</button>
-      <button class="">Dark</button>
-      <button class="">Link</button>
+            <!-- Styles -->
+            <!-- btn class会直接有默认的margin和padding，asset ready，不会像tailwind一样要自己调 -->
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-light">Light</button>
+            <button class="btn btn-dark">Dark</button>
+            <button class="btn btn-link">Link</button>
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Button Sizes -->
-      <button class="">Regular</button>
-      <button class="">Small</button>
-      <button class="">Large</button>
+            <!-- Button Sizes -->
+            <!-- 只有3个size -->
+            <button class="btn btn-primary">Regular</button>
+            <button class="btn btn-secondary btn-sm">Small</button>
+            <button class="btn btn-success btn-lg">Large</button>
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Button States -->
-      <button class="">Regular</button>
-      <button class="">Disabled</button>
-      <button class="">Active</button>
+            <!-- Button States -->
+            <button class="btn btn-primary">Regular</button>
+            <button class="btn btn-primary disabled">Disabled</button>
+            <button class="btn btn-primary active">Active</button>
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Outline Buttons -->
-      <button class="">Primary</button>
-      <button class="">Secondary</button>
-      <button class="">Success</button>
-      <button class="">Danger</button>
-      <button class="">Warning</button>
-      <button class="">Info</button>
-      <button class="">Light</button>
-      <button class="">Dark</button>
+            <!-- Outline Buttons -->
+            <button class="btn btn-outline-primary">Primary</button>
+            <button class="btn btn-outline-secondary">Secondary</button>
+            <button class="btn btn-outline-success">Success</button>
+            <button class="btn btn-outline-danger">Danger</button>
+            <button class="btn btn-outline-warning">Warning</button>
+            <button class="btn btn-outline-info">Info</button>
+            <button class="btn btn-outline-light">Light</button>
+            <button class="btn btn-outline-dark">Dark</button>
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Links Formatted as Buttons -->
-      <a href="#" class="">Link Button</a>
-      <a href="#" class="">Link Button</a>
-      <a href="#" class="">Link Button</a>
+            <!-- Links Formatted as Buttons -->
+            <a href="#" class="btn btn-primary">Link Button</a>
+            <a href="#" class="btn btn-primary">Link Button</a>
+            <a href="#" class="btn btn-primary">Link Button</a>
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Block Buttons -->
-      
+            <!-- Block Buttons -->
+            <!-- btn-block是bootstrap4 的，5就移除了 -->
+            <button class="btn btn-primary btn-block">Button</button>
 
-      <br /><br />
+            <!-- display grid才可以，只是没有空间，要用vstack和gap-3来隔开 -->
+            <div class="d-grid vstack gap-3">
+                <button class="btn btn-primary">Button</button>
+                <button class="btn btn-primary">Cancel</button>
+            </div>
+            <br /><br />
 
-      <!-- Button Group -->
-      
+            <!-- Button Group -->
+            <!-- 让btn变成一组，左右并排 -->
+            <div class="btn-group">
+                <button class="btn btn-primary">SUbmit</button>
+                <button class="btn btn-primary">SUbmit</button>
+                <button class="btn btn-primary">SUbmit</button>
+            </div>
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Button Toolbar -->
+            <!-- Button Toolbar -->
+            <!-- 可以有两个组，放在一个大toolbar -->
+            <div class="btn-toolbar">
+                <div class="btn-group">
+                    <button class="btn btn-primary">SUbmit</button>
+                    <button class="btn btn-primary">SUbmit</button>
+                    <button class="btn btn-primary">SUbmit</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary">SUbmit</button>
+                    <button class="btn btn-primary">SUbmit</button>
+                    <button class="btn btn-primary">SUbmit</button>
+                </div>
+            </div>
 
-       <br /><br />
-     
+            <br /><br />
 
-      <!-- Dropdown Button -->
-     
+            <!-- Dropdown Button -->
+            <div class="dropdown">
+                <button
+                    class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                >
+                    Dropdown Button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="" class="dropdown-item">Link 1</a></li>
+                    <li><a href="" class="dropdown-item">Link 2</a></li>
+                    <li><a href="" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+            <!-- Don't go past here -->
+        </div>
+        <div style="margin-top: 350px"></div>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
