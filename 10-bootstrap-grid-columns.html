@@ -1,52 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Bootstrap Grid Columns</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <title>Bootstrap Sandbox | Bootstrap Grid Columns</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-5">Bootstrap Grid Columns</h1>
 
-      <!-- Basic Grid Layout -->
+            <!-- Basic Grid Layout -->
+            <div class="row">
+                <div class="col bg-light border">1 of 2</div>
+                <div class="col bg-light border">2 of 2</div>
+            </div>
+            <div class="row">
+                <div class="col bg-light border">1 of 3</div>
+                <div class="col bg-light border">2 of 3</div>
+                <div class="col bg-light border">3 of 3</div>
+            </div>
+            <br /><br />
 
-      <br /><br />
+            <!-- Column Sizes -->
+            <!-- 使用col-6表明你要的宽度，共有12份 -->
+            <div class="row">
+                <div class="col-6 bg-light border">1 of 2</div>
+                <div class="col-6 bg-light border">2 of 2</div>
+            </div>
+            <div class="row">
+                <div class="col-4 bg-light border">1 of 2</div>
+                <div class="col-8 bg-light border">2 of 2</div>
+            </div>
 
-      <!-- Column Sizes -->
+            <br /><br />
 
-      <br /><br />
+            <!-- Responsive Grid -->
+            <!-- Stack on small screen，只有在md以上的时候才会左右排 -->
+            <div class="row">
+                <div class="col-md-6 bg-light border">1 of 2</div>
+                <div class="col-md-6 bg-light border">2 of 2</div>
+            </div>
+            <!-- sm的时候有2排，lg的时候有4排 -->
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 bg-light border">1 of 4</div>
+                <div class="col-sm-6 col-lg-3 bg-light border">2 of 4</div>
+                <div class="col-sm-6 col-lg-3 bg-light border">3 of 4</div>
+                <div class="col-sm-6 col-lg-3 bg-light border">4 of 4</div>
+            </div>
+            <br /><br />
 
-      <!-- Responsive Grid -->
+            <!-- Row Cols -->
+            <!-- 直接控制一个row有几个col，不用像上一个一样进行单个控制 -->
+            <div class="row rol-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col bg-light border">Column</div>
+                <div class="col bg-light border">Column</div>
+                <div class="col bg-light border">Column</div>
+                <div class="col bg-light border">Column</div>
+                <div class="col bg-light border">Column</div>
+                <div class="col bg-light border">Column</div>
+            </div>
+            <br /><br />
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Row Cols -->
+            <!-- Nesting -->
+            <div class="row">
+                <div class="col bg-light border pb-3">Column</div>
+                <div class="col bg-light border pb-3">Column</div>
+                <div class="col bg-light border pb-3">
+                    <div class="row">
+                        <div class="col text-bg-dark">Nest</div>
+                        <div class="col text-bg-dark">Nest</div>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
 
-      <br /><br />
+            <!-- Gutters -->
+            <!-- gutters可以控制每个column的间隔，默认是g-4 -->
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="p-3 text-bg-primary">Content Item</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 text-bg-primary">Content Item</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 text-bg-primary">Content Item</div>
+                </div>
+            </div>
+            <br /><br />
 
-      <br /><br />
+            <!-- Offsetting Columns -->
+            <!-- 往右边推，offset-4就是往右边推4份额 -->
+            <div class="row">
+                <div class="col-md-4 offset-4">
+                    <div class="p-3 text-bg-primary">Content Item</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 text-bg-primary">Content Item</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-3 border">Hello World</div>
+            </div>
+            <br /><br />
 
-      <!-- Nesting -->
+            <!-- Ordering -->
+            <div class="row">
+                <div class="col bg-light border order-2">Column 1</div>
+                <div class="col bg-light border order-4">Column 2</div>
+                <div class="col bg-light border order-1">Column 3</div>
+                <div class="col bg-light border order-3">Column 4</div>
+            </div>
+            <!-- Don't go past here -->
+        </div>
+        <div style="margin-top: 350px"></div>
 
-      <br /><br />
-
-      <!-- Gutters -->
-
-      <br /><br />
-
-      <!-- Offsetting Columns -->
-
-      <br /><br />
-
-      <!-- Ordering -->
-
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
