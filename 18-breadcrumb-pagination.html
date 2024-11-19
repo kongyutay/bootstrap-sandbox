@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Breadcrumb & Pagination</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Breadcrumb & Pagination</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <title>Bootstrap Sandbox | Breadcrumb & Pagination</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-5">Breadcrumb & Pagination</h1>
 
-      <!-- Breadcrumb -->
+            <!-- Breadcrumb -->
+            <!-- 基本的breadcrumb配套会有breadcrumb和item，默认会使用/隔开 -->
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="">Home</a></li>
+                    <li class="breadcrumb-item"><a href="">About</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="">Staff</a>
+                    </li>
+                </ol>
+            </nav>
+            <br /><br />
 
-      <br /><br />
+            <!-- Dividers -->
+            <!-- 自定义隔开符，要用bootstrap的custom property -->
+            <nav style="--bs-breadcrumb-divider: '>'">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="">Home</a></li>
+                    <li class="breadcrumb-item"><a href="">About</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="">Staff</a>
+                    </li>
+                </ol>
+            </nav>
+            <br /><br />
 
-      <!-- Dividers -->
+            <!-- Pagination -->
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Pagination -->
+            <!-- Active & Disabled States -->
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Active & Disabled States -->
+            <!-- Sizing -->
 
-      <br /><br />
+            <br /><br />
 
-      <!-- Sizing -->
+            <!-- Alignment -->
 
-      <br /><br />
+            <!-- Don't go past here -->
+        </div>
+        <div style="margin-top: 350px"></div>
 
-      <!-- Alignment -->
-
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
