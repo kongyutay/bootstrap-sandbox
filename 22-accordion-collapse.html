@@ -12,6 +12,7 @@
             <h1 class="mb-5">Accordion & Collapse</h1>
 
             <!-- Accordion -->
+            <!-- 可以选择添加show class，默认就会显示 -->
             <div class="accordion" id="myaccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -89,7 +90,27 @@
             <br /><br />
 
             <!-- Collapse -->
-
+            <!-- 可以选择加show class，默认就会显示 -->
+            <div class="my-3">
+                <button
+                    class="btn btn-primary"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mycontent"
+                >
+                    Toggle Content
+                </button>
+            </div>
+            <div class="collapse" id="mycontent">
+                <div class="card">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Similique, voluptas. Veniam corporis repellendus
+                        enim blanditiis dolorem velit aliquam sint, fuga
+                        explicabo qui. Voluptate repudiandae nobis odit placeat
+                        similique ab laudantium!F
+                    </div>
+                </div>
+            </div>
             <!-- Don't go past here -->
         </div>
         <div style="margin-top: 350px"></div>
