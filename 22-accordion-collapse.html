@@ -1,26 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Accordion & Collapse</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Accordion & Collapse</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <title>Bootstrap Sandbox | Accordion & Collapse</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-5">Accordion & Collapse</h1>
 
-      <!-- Accordion -->
+            <!-- Accordion -->
+            <div class="accordion" id="myaccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                        >
+                            Accordion 1
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#myaccordion"
+                    >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptatibus, ad dolores. Minus facilis, fugit
+                            consequatur cumque nobis aliquam inventore eaque
+                            consectetur magnam vero laboriosam, ullam harum, ex
+                            natus quod labore.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                        >
+                            Accordion 1
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#myaccordion"
+                    >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptatibus, ad dolores. Minus facilis, fugit
+                            consequatur cumque nobis aliquam inventore eaque
+                            consectetur magnam vero laboriosam, ullam harum, ex
+                            natus quod labore.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                        >
+                            Accordion 1
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#myaccordion"
+                    >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Voluptatibus, ad dolores. Minus facilis, fugit
+                            consequatur cumque nobis aliquam inventore eaque
+                            consectetur magnam vero laboriosam, ullam harum, ex
+                            natus quod labore.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
 
-      <br /><br />
+            <!-- Collapse -->
 
-      <!-- Collapse -->
+            <!-- Don't go past here -->
+        </div>
+        <div style="margin-top: 350px"></div>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
