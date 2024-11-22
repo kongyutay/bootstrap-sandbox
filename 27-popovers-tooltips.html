@@ -21,7 +21,18 @@
             <br /><br />
 
             <!-- Tooltip -->
-
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                <a href="" data-bs-toggle="tooltip" data-bs-title="Tooltip One"
+                    >Tooltip one</a
+                >
+                repellendus iusto odit aut ratione natus, exercitationem, quasi
+                <a href="" data-bs-toggle="tooltip" data-bs-title="Tooltip Two"
+                    >Tooltip Two</a
+                >
+                et aperiam magni voluptatem, fugiat vitae odio? Aspernatur
+                libero quam ab nesciunt similique?
+            </p>
             <!-- Don't go past here -->
         </div>
         <div style="margin-top: 350px"></div>
@@ -30,6 +41,15 @@
         <script>
             const popoverEl = document.getElementById("popover");
             const popover = new bootstrap.Popover(popoverEl);
+
+            const tooltipTriggerList = document.querySelectorAll(
+                '[data-bs-toggle="tooltip"]'
+            );
+            const tooltipList = [...tooltipTriggerList].map(
+                (tooltipTriggerEl) => {
+                    new bootstrap.Tooltip(tooltipTriggerEl);
+                }
+            );
         </script>
     </body>
 </html>
